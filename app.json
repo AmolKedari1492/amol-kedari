@@ -1,0 +1,17 @@
+{
+  "name": "Amol Kedari Resume",
+  "description": "A Resume .",
+  "keywords": [
+    "ReactJS",
+    "HTML5",
+    "CSS3"
+  ],
+  "website": "https://amolkedari.com/",
+  "repository": "https://git.heroku.com/amol-kedari.git",
+  "logo": "https://small-sharp-tool.com/logo.svg",
+  "buildpacks": [
+    {
+      "url": "https://www.dropbox.com/home/Apps/Heroku/amol-kedari"
+    }
+  ]
+}
