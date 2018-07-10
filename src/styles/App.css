@@ -247,9 +247,22 @@ h1, .center {
   text-align: center;
 }
 .tech-skill {
-  margin: 10px 0;
+  margin: 10px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px 1px #ccc;
 }
 
+.tech-skill:hover{
+  position: relative;
+  bottom: 2px;
+}
+.tech-skill .right{
+  display: none;
+}
 .dev-icon {
   margin-right: 10px;
 }
