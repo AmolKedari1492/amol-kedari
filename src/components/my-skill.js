@@ -13,13 +13,21 @@ class MySkillComponent extends React.Component {
         {name: 'Javascript', className:'devicon-javascript-plain colored',value: 8},
         {name: 'ReactJS', className: 'devicon-react-original colored', value: 8},
         {name: 'AngularJS', className: 'devicon-angularjs-plain colored', value: 7},
+        {name: 'Jquery', className: 'devicon-jquery-plain colored', value: 7},
         {name: 'NodeJS', className: 'devicon-nodejs-plain colored',  value: 8},
         {name: 'ExpressJS', className:'devicon-express-original colored', value: 7},
         {name: 'HTML5', className:'devicon-html5-plain colored',  value: 8},
         {name: 'CSS3', className:'devicon-css3-plain colored', value: 8},
+        {name: 'Sass', className:'devicon-sass-original colored', value: 8},
+        {name: 'Bootstrap', className:'devicon-bootstrap-plain colored', value: 8},
+        {name: 'less', className:'devicon-less-plain-wordmark colored', value: 8},
         {name: 'Wordpress', className:'devicon-wordpress-plain colored', value: 8},
         {name: 'Mysql', className:'devicon-mysql-plain colored', value: 6},
-        {name: 'MongoDB', className:'devicon-mongodb-plain colored', value: 6}
+        {name: 'MongoDB', className:'devicon-mongodb-plain colored', value: 6},
+        {name: 'gulp', className:'devicon-gulp-plain colored', value: 6},
+        {name: 'webpack', className:'devicon-webpack-plain colored', value: 6},
+        {name: 'git', className:'devicon-git-plain colored', value: 6},
+        {name: 'AWS', className:'devicon-amazonwebservices-original colored', value: 6},
     ],
     experience: [
       {name: 'Hopscotch Wholesale Pvt. Ltd.', start: 'June 2015', end: 'Present', class: 'active',
@@ -31,7 +39,7 @@ class MySkillComponent extends React.Component {
       project, an online community for market research and online survey. Worked on MEAN technology.
       Developed a complete website burmaburma.in in wordpress. I was also worked on their custom apps.`}
     ],
-    eduction: [
+    education: [
       {year: '2013', institute: 'Vidyalankar(MU)', name: 'BE(INFT)', total: '61.66%'},
       {year: '2009', institute: 'M. D. college', name: 'HSC(Sci)', total: '68.17%'},
       {year: '2007', institute: 'Navbharat Vidyalaya', name: 'SSC', total: '77.53%'}
@@ -48,6 +56,11 @@ class MySkillComponent extends React.Component {
         name: 'CopyStack Chrome plugin',
         description: 'A plugin which helps you to keep track of last 10 copied text.',
         link: 'https://chrome.google.com/webstore/detail/copystack/glkghbammoafngedbmkfhoklnifmfjpc'
+      },
+      {
+        name: 'Lazy Reader Chrome plugin',
+        description: 'This plugin helps you to read html content of an article',
+        link: 'https://chrome.google.com/webstore/detail/lazy-reader/bacefjcibkjpklnloimkkmhpkihkcmoe?hl=en'
       }
     ]
   }
@@ -60,7 +73,7 @@ render() {
         <div className='row'> {
           this.state.skill.map((item, i)=> {
             return (
-              <div className="row tech-skill" key={i}>
+              <div className="tech-skill" key={i}>
                 <i className={'left dev-icon ' + item.className}></i>
                 <span className="left">{item.name}</span>
                 <span className="right">10</span>
@@ -106,9 +119,9 @@ render() {
         }</div>
         <div className="row">
         <span className="half left">
-          <h3>Eduction</h3>
+          <h3>Education</h3>
           <div className="row"> {
-            this.state.eduction.map((item, i)=> {
+            this.state.education.map((item, i)=> {
               return (
                 <div className="edu-separator" key={i}>
                   <div className="row core-details">
